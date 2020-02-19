@@ -1,0 +1,50 @@
+#register-box {
+	margin: auto;
+	height: 80vh;
+	width: 50vw;
+	margin-top: 10vh;
+	background-color: lightblue;
+
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+	grid-template-rows: 15% 10% 10% 10% 10% 10% 10% 10% 15%;
+	grid-template-areas:
+		". . ."
+		". title ."
+		". username ."
+		". email ."
+		". password ."
+		". proficient ."
+		". learn ."
+		". button ."
+		". . .";
+}
+
+#title {
+	grid-area: title;
+	text-align: center;
+}
+
+#username {
+	grid-area: username;
+}
+
+#email {
+	grid-area: email;
+}
+
+#password {
+	grid-area: password;
+}
+
+#proficient + .ss-main {
+	grid-area: proficient;
+}
+
+#learn + .ss-main {
+	grid-area: learn;
+}
+
+button {
+	grid-area: button;
+}

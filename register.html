@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<!-- load MUI -->
+	<link href="mui.min.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.25.0/slimselect.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.25.0/slimselect.min.css"> 
+</head>
+
+<body>
+	<div id="register-box">
+		<div id="title" class="mui--text-display2">
+			Register
+		</div>
+		<div id="username" class="mui-textfield">
+			<input type="text" placeholder="Username">
+		</div>
+		<div id="email" class="mui-textfield">
+			<input type="email" placeholder="Email">
+		</div>
+		<div id="password" class="mui-textfield"> 
+			<input type="password" placeholder="Password">
+		</div>
+		<select id="proficient" multiple>
+			<option>English</option>
+			<option>Spanish</option>
+			<option>Mandarin Chinese</option>
+			<option>Korean</option>
+		</select>
+		<select id="learn" multiple>
+			<option>English</option>
+			<option>Spanish</option>
+			<option>Mandarin Chinese</option>
+			<option>Korean</option>
+		</select>
+
+
+		<button class="mui-btn mui-btn--primary mui-btn--raised">Create Account</button>
+	</div>
+
+	<script>
+		new SlimSelect({
+				select: '#proficient'
+		})
+		new SlimSelect({
+				select: '#learn'
+		})
+	</script>
+</body>
+
+</html>
