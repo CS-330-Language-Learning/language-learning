@@ -22,7 +22,7 @@ function login(){
                 console.log("logged in");
             }
             else{
-                openfile("profile2.html");
+                openfile("./messaging_home.html");
                 console.log("logged in");
             }
         }

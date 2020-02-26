@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Messaging Home</title>
+    <link rel="stylesheet" href="messaging_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/cb0e7ff80d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hud">
+            <i style="font-size:30px;" class="fas fa-long-arrow-alt-left"></i>
+            <button onclick="toProfile()" class="profile"><img src="billjohnson.jfif"></button>
+        </div>
+        <div class="msg-header">
+            <div class="msg-header-img">
+                <img src="johndoe.jpg">
+            </div>
+            <div class="active">
+                <h4>John Doe</h4>
+                <h6>3 hours ago...</h6>
+            </div>
+        </div>
+        <div class="chat-page">
+            <div class="msg-inbox">
+                <div class="chats">
+                    <div class="msg-page">
+                        <div class="received-chats">
+                            <div class="received-chats-img">
+                                <img src="johndoe.jpg">
+                            </div>
+                            <div class="received-msg">
+                                <div class="received-msg-inbox">
+                                    <i class="fas fa-file-audio"></i>
+                                    <span class="time">11:00 PM | 2/26</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="outgoing-chats">
+                            <div class="outgoing-chats-msg">  
+                                <i class="fas fa-file-audio"></i>                                 
+                                    <span class="time">12:00 PM | 2/26</span>
+                            </div>
+                            <div class="outgoing-chats-img">
+                                <img src="billjohnson.jfif">
+                            </div>
+                        </div>
+
+                        <div class="received-chats">
+                            <div class="received-chats-img">
+                                <img src="johndoe.jpg">
+                            </div>
+                            <div class="received-msg">
+                                <div class="received-msg-inbox">
+                                    <i class="fas fa-file-audio"></i>
+                                    <span class="time">11:00 PM | 2/26</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="outgoing-chats" id="testSend">
+                            <div class="outgoing-chats-msg">  
+                                <i class="fas fa-file-audio"></i>                                 
+                                    <span class="time">12:00 PM | 2/26</span>
+                            </div>
+                            <div class="outgoing-chats-img">
+                                <img src="billjohnson.jfif">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="msg-bottom">
+                    <div class="bottom-icons">
+                        <!-- put icons in here -> microphone -->
+                    </div>
+                    <div class="input-group">
+                        <!-- <input type="text" class="form-control" placeholder="replace with audio"> -->
+                        <button onclick="recording();" class="recordButton">Record Message</button>
+                        <div class="input-group-append">
+                            <button onclick="sendMessage();" class="input-group-text">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <script src="messaging.js"></script>
+</body>
+
+</html>
