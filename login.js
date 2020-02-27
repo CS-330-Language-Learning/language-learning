@@ -3,7 +3,7 @@
         username: johndoe123
         password: password1
     profile 2:
-        username: billjohnson
+        username: billyjohnson
         password: password2
 */
 var users = {
