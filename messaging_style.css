@@ -27,12 +27,11 @@
     float: left;
 }
 
-img{
+img {
     border-radius: 50%;
 }
 
 .active{
-    width: 120px;
     float: left;
     margin-top: 10px;
 }
@@ -45,6 +44,7 @@ img{
 .active h6{
     font-size: 10px;
     margin-left: 10px;
+    padding-top: 1px;
     line-height: 2px;
 }
 
@@ -188,7 +188,7 @@ img{
     margin-top: 3px;
 }
 
-.hud{
+.hud { 
     border: 1px solid black;
     height: 35px;
 }
