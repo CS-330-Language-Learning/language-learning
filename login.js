@@ -38,3 +38,12 @@ function login(){
 }
 
 function openfile(file) { window.location = file; }
+
+var password = document.getElementById("password");
+
+password.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        login();
+    }
+});
