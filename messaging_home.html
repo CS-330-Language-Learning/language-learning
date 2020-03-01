@@ -2,85 +2,31 @@
 <head>
     <title>Messaging Home</title>
     <link rel="stylesheet" href="messaging_style.css">
+    <!-- load MUI -->
+	<link href="mui.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/cb0e7ff80d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="hud">
-            <i style="font-size:30px;" class="fas fa-long-arrow-alt-left"></i>
-            <button onclick="toProfile()" class="profile">Profile</button>
+    <div class="mui-appbar">
+        <i class="fas fa-angle-left fa-5x"></i>
+        <div id="lang" class="mui--text-display2">Speaking in English</div>
+        <div id="user" class="mui--text-display2">With johndoe123</div>
+        <div id="topic" class="mui--text-display2">About the 2020 Tokyo Olympics</div>
+    </div>
+    <div id="chatroom">
+        <div id="m1" class="chat-bubble cb-left">
+            <i class="fas fa-play-circle"></i>
         </div>
-        <div class="msg-header">
-            <div class="active">
-                <h4>johndoe123</h4>
-                <h6>Language: English</h6>
-                <h6>Topic: The NBA Finals</h6>
-            </div>
-        </div>
-        <div class="chat-page">
-            <div class="msg-inbox">
-                <div class="chats">
-                    <div class="msg-page">
-                        <div class="received-chats">
-                            <div class="received-msg">
-                                <div class="received-msg-inbox">
-                                    <i class="fas fa-file-audio"></i>
-                                    <span class="time">11:00 PM | 2/26</span>
-                                </div>
-                            </div>
-                        </div>
+        <div id="m2" class="chat-bubble cb-right">
 
-                        <div class="outgoing-chats">
-                            <div class="outgoing-chats-msg">  
-                                <i class="fas fa-file-audio"></i>                                 
-                                    <span class="time">12:00 PM | 2/26</span>
-                            </div>
-                        </div>
-
-                        <div class="received-chats">
-                            <div class="received-msg">
-                                <div class="received-msg-inbox">
-                                    <i class="fas fa-file-audio"></i>
-                                    <span class="time">11:00 PM | 2/26</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="outgoing-chats" id="testSend">
-                            <div class="outgoing-chats-msg">  
-                                <i class="fas fa-file-audio"></i>                                 
-                                    <span class="time">12:00 PM | 2/26</span>
-                            </div>
-                            <div class="outgoing-chats-img">
-                                <img src="man.jpeg">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="msg-bottom">
-                    <div class="bottom-icons">
-                        <!-- put icons in here -> microphone -->
-                    </div>
-                    <div class="input-group">
-                        <!-- <input type="text" class="form-control" placeholder="replace with audio"> -->
-                        <button onclick="recording();" class="recordButton">Record Message</button>
-                        <div class="input-group-append">
-                            <button onclick="sendMessage();" class="input-group-text">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </div>
-        
-                    </div>
-                </div>
-            </div>
-            
-        </div>
         </div>
     </div>
-    <script src="./messaging.js"></script>
+    <div id="bottom-bar">
+        
+    </div>
+    <!-- <script src="./messaging.js"></script> -->
 </body>
 
 </html>

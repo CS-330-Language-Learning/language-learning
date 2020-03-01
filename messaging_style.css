@@ -1,4 +1,76 @@
-.container{
+.mui-appbar {
+    height: 12.5vh;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 35px 25% 25% 25%;
+    grid-template-areas:
+        ". ."
+        "back lang"
+        ". user"
+        ". topic";
+    align-items: center;
+}
+
+.fa-angle-left {
+    grid-area: back;
+    padding-left: 50px;
+}
+
+#lang {
+    grid-area: lang;
+}
+
+#user {
+    grid-area: user;
+}
+
+#topic {
+    grid-area: topic;
+}
+
+#chatroom {
+    height: 56.2vh;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 5% 40% 5% 5% 40% 5%;
+    grid-template-rows: 5% 7% 3% 7% 7% 7% 7% 5%;
+    grid-template-areas:
+        ". . . . . ."
+        ". m1 . . . ."
+        ". . . . . ."
+        ". . . . m2 ."
+        ". . . . . ."
+        ". . . . . ."
+        ". . . . . ."
+        ". . . . . .";
+}
+
+#bottom-bar {
+    height: 8vh;
+    background-color: #2196F3;
+}
+
+.chat-bubble {
+    border-radius: 100px;
+}
+
+.cb-left {
+    background-color: #b6b6b9;
+}
+
+.cb-right {
+    background-color: #7889E2;
+}
+
+#m1 {
+    grid-area: m1;
+}
+
+#m2 {
+    grid-area: m2;
+}
+
+/* .container{
     max-width: 500 !important;
     margin: auto;
     margin-top: 4%;
@@ -197,4 +269,4 @@ img {
     margin-left: 10px;
     margin-top: 1px;
 }
-
+ */
