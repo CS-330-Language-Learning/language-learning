@@ -1,11 +1,15 @@
 <html>
 <head>
     <title>Messaging Home</title>
-    <link rel="stylesheet" href="messaging_style.css">
     <!-- load MUI -->
 	<link href="mui.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cb0e7ff80d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="messaging_style.css">
 </head>
 
 <body>
@@ -55,19 +59,28 @@
         <div id="m3-label">
             1:55 PM | 03/01
         </div>
+        <div id="m4" class="chat-bubble cb-right">
+            <i class="fas fa-play-circle fa-3x play-message"></i>
+            <div class="line"></div>
+            <div class="message-length">
+                <div>
+                    0:29
+                </div>
+            </div>
+        </div>
+        <div id="m4-label">
+            2:00 PM | 03/01
+        </div>
         <div id="hint-text">
             Hold to Record
         </div>
     </div>
     <div id="bottom-bar">
         <i id="no" class="far fa-times-circle fa-7x"></i>
-        <span id="audio" class="fa-stack fa-5x">
-            <i class="far fa-circle fa-inverse fa-stack-2x"></i>
-            <i class="fas fa-microphone fa-inverse fa-stack-1x"></i>
-        </span>
+        <a id="audio" class="btn-floating btn-large waves-effect waves-light red"><i id="audio-icon" class="large material-icons">mic</i></a>
         <i id="yes" class="far fa-check-circle fa-7x"></i>
     </div>
-    <!-- <script src="./messaging.js"></script> -->
+    <script src="./messaging.js"></script>
 </body>
 
 </html>
