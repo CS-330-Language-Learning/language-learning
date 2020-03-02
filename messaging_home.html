@@ -11,20 +11,61 @@
 <body>
     <div class="mui-appbar">
         <i class="fas fa-angle-left fa-5x"></i>
-        <div id="lang" class="mui--text-display2">Speaking in English</div>
-        <div id="user" class="mui--text-display2">With johndoe123</div>
-        <div id="topic" class="mui--text-display2">About the 2020 Tokyo Olympics</div>
+        <div id="lang" class="mui--text-display2"><i class="fas fa-globe fa-fw"></i> English</div>
+        <div id="user" class="mui--text-display2"><i class="fas fa-user-circle fa-fw"></i> johndoe123</div>
+        <div id="topic" class="mui--text-display2"><i class="far fa-comments fa-fw"></i> The 2020 Tokyo Olympics</div>
     </div>
     <div id="chatroom">
+        <div id="datetime">
+            TUES 1:43 PM
+        </div>
         <div id="m1" class="chat-bubble cb-left">
-            <i class="fas fa-play-circle"></i>
+            <i class="fas fa-play-circle fa-3x play-message"></i>
+            <div class="line"></div>
+            <div class="message-length">
+                <div>
+                    0:18
+                </div>
+            </div>
+        </div>
+        <div id="m1-label">
+            1:43 PM | 03/01
         </div>
         <div id="m2" class="chat-bubble cb-right">
-
+            <i class="fas fa-play-circle fa-3x play-message"></i>
+            <div class="line"></div>
+            <div class="message-length">
+                <div>
+                    0:12
+                </div>
+            </div>
+        </div>
+        <div id="m2-label">
+            1:52 PM | 03/01
+        </div>
+        <div id="m3" class="chat-bubble cb-left">
+            <i class="fas fa-play-circle fa-3x play-message"></i>
+            <div class="line"></div>
+            <div class="message-length">
+                <div>
+                    0:21
+                </div>
+            </div>
+        </div>
+        <div id="m3-label">
+            1:55 PM | 03/01
+        </div>
+        <div id="hint-text">
+            Hold to Record
         </div>
     </div>
     <div id="bottom-bar">
-        
+        <i id="no" class="far fa-times-circle fa-7x"></i>
+        <span id="audio" class="fa-stack fa-5x">
+            <i class="far fa-circle fa-inverse fa-stack-2x"></i>
+            <i class="fas fa-microphone fa-inverse fa-stack-1x"></i>
+        </span>
+        <i id="yes" class="far fa-check-circle fa-7x"></i>
     </div>
     <!-- <script src="./messaging.js"></script> -->
 </body>
