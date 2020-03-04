@@ -6,11 +6,17 @@ function startup() {
     noButton.addEventListener('click', handleNoClick, false)
     const yesButton = document.getElementById('yes')
     yesButton.addEventListener('click', handleYesClick, false)
+    const backButton = document.getElementById('back')
+    backButton.addEventListener('click', goToProfile, false)
 }
 
 document.addEventListener('DOMContentLoaded', startup)
 
 let messageRecorded = false
+
+function goToProfile() {
+    window.location = "./profile2.html";
+}
 
 function handleYesClick(evt) {
     const icon = document.getElementById('audio-icon')
