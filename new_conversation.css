@@ -1,0 +1,56 @@
+.mui-appbar {
+	height: 12.5vh;
+}
+
+#banner {
+	font-size: 7em;
+	padding-left: 40px;
+	padding-top: 4vh;
+}
+
+#selection {
+	height: 87.5vh;
+	display: grid;
+	grid-template-columns: 6% 44% 44% 6%;
+	grid-template-rows: 3% 5% 5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+	grid-template-areas:
+		". . . ."
+		". prompt prompt ."
+		". search search ."
+		". text text ."
+		". topic1 topic2 ."
+		". topic3 topic4 ."
+		". topic5 topic6 ."
+		". . . .";
+}
+
+#prompt {
+	grid-area: prompt;
+	font-size: 4em;
+}
+
+#search {
+	grid-area: search;
+	position: relative;
+}
+
+#search i {
+	position: absolute;
+	bottom: 15px;
+	left: 20px;
+}
+
+#search input {
+	background-color: rgb(231, 231, 231);
+	height: 2em;
+	border-radius: 20px;
+	padding-left: 80px;
+	font-size: 4em;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+::placeholder {
+	color: rgb(113, 113, 113);
+}
