@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', startup)
 let messageRecorded = false
 
 function goToProfile() {
-    window.location = "./profile2.html";
+    window.location = "./message_inbox.html";
 }
 
 function handleYesClick(evt) {

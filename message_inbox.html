@@ -15,7 +15,7 @@
 <body>
 	<div id="message-box">
 		<div id="title">
-            <h2>Messages<i class="fas fa-user"></i></h2>
+            <h2>Messages<i id="profile" class="fas fa-user"></i></h2>
 		</div>
         <div id="search">
             <input id="search_box" type="text" placeholder="Search">
@@ -78,8 +78,11 @@
         document.getElementById("composeCoaching").addEventListener("click", function(){
             window.location = './new_conversation.html'
         });
+
+        document.getElementById("profile").addEventListener("click", function(){
+            window.location = './profile2.html';
+        });
     </script>
-	<!-- <script src="./profile.js"></script> -->
 </body>
 
 
