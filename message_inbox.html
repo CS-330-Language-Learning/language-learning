@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Message Inbox</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="message_inbox.css">
+    <script src="https://kit.fontawesome.com/cb0e7ff80d.js" crossorigin="anonymous"></script>
+
+	<!-- load MUI -->
+	<link href="mui.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="message-box">
+		<div id="title">
+            <h2>Messages<i class="fas fa-user"></i></h2>
+		</div>
+        <div id="search">
+            <input id="search_box" type="text" placeholder="Search">
+            <i class="fas fa-search fa-sm"></i>
+        </div>
+        
+		<div id="practicing">
+            <h3 class="title">Practicing<i class="far fa-edit fa-xs" id="composePracticing"></i></h3>
+            <div class="message_preview one">
+                <div style="background-color: #FFBDF8;" class="profilepic"></div>
+                <p class="username">weeb</p>
+                <p class="topic">Corona Virus</p>
+                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+            </div>
+            <div class="message_preview two">
+                <div style="background-color: #99A9FF;" class="profilepic"></div>
+                <p class="username">weeb</p>
+                <p class="topic">Corona Virus</p>
+                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+            </div>
+            <div class="message_preview three">
+                <div style="background-color: #FDFF93;" class="profilepic"></div>
+                <p class="username">weeb</p>
+                <p class="topic">Corona Virus</p>
+                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+            </div>
+        </div>
+        <div id="coaching">
+            <h3 class="title">Coaching<i class="far fa-edit fa-xs" id="composeCoaching"></i></h3>
+            <div class="message_preview one">
+                <div style="background-color: #FFBDF8;" class="profilepic"></div>
+                <p class="username">weeb</p>
+                <p class="topic">Corona Virus</p>
+                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+            </div>
+            <div class="message_preview two">
+                <div style="background-color: #99A9FF;" class="profilepic"></div>
+                <p class="username">weeb</p>
+                <p class="topic">Corona Virus</p>
+                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        var input = document.getElementById("search_box");
+
+        input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            alert('Searched for Message');
+            location.reload(true);
+        }
+        });
+        
+        document.getElementById("composePracticing").addEventListener("click", function(){
+            window.location = './new_conversation.html'
+        });
+
+        document.getElementById("composeCoaching").addEventListener("click", function(){
+            window.location = './new_conversation.html'
+        });
+    </script>
+	<!-- <script src="./profile.js"></script> -->
+</body>
+
+
+
+</html>
