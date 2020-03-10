@@ -15,7 +15,7 @@
 <body>
 	<div id="message-box">
 		<div id="title">
-            <h2>Messages<i id="profile" class="fas fa-user"></i></h2>
+            <h2>Messages<i id="profile" class="fas fa-user fa-xs"></i></h2>
 		</div>
         <div id="search">
             <input id="search_box" type="text" placeholder="Search">
@@ -24,38 +24,38 @@
         
 		<div id="practicing">
             <h3 class="title">Practicing<i class="far fa-edit fa-xs" id="composePracticing"></i></h3>
-            <div class="message_preview one">
+            <div class="message_preview one" id="one">
                 <div style="background-color: #FFBDF8;" class="profilepic"></div>
-                <p class="username">weeb</p>
-                <p class="topic">Corona Virus</p>
-                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+                <p class="username">johndoe123</p>
+                <p class="topic">Spring Break</p>
+                <p class="date">3/9/2020<i class="fas fa-angle-right"></i></p>
             </div>
-            <div class="message_preview two">
+            <div class="message_preview two" id="two">
                 <div style="background-color: #99A9FF;" class="profilepic"></div>
-                <p class="username">weeb</p>
-                <p class="topic">Corona Virus</p>
-                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+                <p class="username">willie_wildcat</p>
+                <p class="topic">March Madness</p>
+                <p class="date">3/5/2020<i class="fas fa-angle-right"></i></p>
             </div>
-            <div class="message_preview three">
+            <div class="message_preview three" id="three">
                 <div style="background-color: #FDFF93;" class="profilepic"></div>
-                <p class="username">weeb</p>
-                <p class="topic">Corona Virus</p>
-                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+                <p class="username">mortyuwu</p>
+                <p class="topic">Baseball</p>
+                <p class="date">3/1/2020<i class="fas fa-angle-right"></i></p>
             </div>
         </div>
         <div id="coaching">
             <h3 class="title">Coaching<i class="far fa-edit fa-xs" id="composeCoaching"></i></h3>
-            <div class="message_preview one">
+            <div class="message_preview one" id="four">
                 <div style="background-color: #FFBDF8;" class="profilepic"></div>
-                <p class="username">weeb</p>
-                <p class="topic">Corona Virus</p>
-                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+                <p class="username">ripnudm</p>
+                <p class="topic">2020 Elections</p>
+                <p class="date">3/7/2020<i class="fas fa-angle-right"></i></p>
             </div>
-            <div class="message_preview two">
+            <div class="message_preview two" id="five">
                 <div style="background-color: #99A9FF;" class="profilepic"></div>
-                <p class="username">weeb</p>
-                <p class="topic">Corona Virus</p>
-                <p class="date">1/1/2020<i class="fas fa-angle-right"></i></p>
+                <p class="username">norrisw</p>
+                <p class="topic">2020 Olympics</p>
+                <p class="date">3/3/2020<i class="fas fa-angle-right"></i></p>
             </div>
         </div>
     </div>
@@ -81,6 +81,32 @@
 
         document.getElementById("profile").addEventListener("click", function(){
             window.location = './profile2.html';
+        });
+
+        const toggleClick = () => {
+            this.classList.toggle("clicked");
+        }
+
+        var one = document.getElementById("one");
+        var two = document.getElementById("two");
+        var three = document.getElementById("three");
+        var four = document.getElementById("four");
+        var five = document.getElementById("five");
+
+        one.addEventListener("click", function (){
+            one.classList.toggle("clicked");
+        });
+        two.addEventListener("click", function (){
+            two.classList.toggle("clicked");
+        });
+        three.addEventListener("click", function (){
+            three.classList.toggle("clicked");
+        });
+        four.addEventListener("click", function (){
+            four.classList.toggle("clicked");
+        });
+        five.addEventListener("click", function (){
+            five.classList.toggle("clicked");
         });
     </script>
 </body>
