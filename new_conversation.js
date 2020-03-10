@@ -1,5 +1,6 @@
 const renderTopics = topics => {
 	const topicSelection = document.getElementById('selection')
+
 	let counter = 1
 	for (const topic of topics) {
 		const topicSection = document.createElement('section')
@@ -32,3 +33,12 @@ const topics = [
 window.addEventListener("load", () => {
 	renderTopics(topics)
 });
+
+document.querySelector('#search-input').onkeyup = (ev) => {
+	// Number 13 is the "Enter" key on the keyboard
+	if (ev.keyCode === 13) {
+			ev.preventDefault();
+			const term = document.querySelector('#search-input').value;
+			console.log(term)
+	}
+};
