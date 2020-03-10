@@ -88,17 +88,16 @@
         border-bottom: 1px solid grey;
         height: 98%;
         width: 100%;
-
-        /* make grid:
-            profile username . date
-            profile topic . .
-        */
         display: grid;
-        grid-template-columns: 25% 45% 30%;
+        grid-template-columns: 23% 47% 30%;
         grid-template-rows: 50% 50%;
         grid-template-areas:
                 "profilepic username date"
                 "profile topic ."
+    }
+
+    @-webkit-keyframes example{
+        from {background-color: blue;}
     }
 
     .profilepic{
@@ -109,16 +108,35 @@
         margin-top: 8px;
     }
 
+    .clicked{
+        animation-name: example;
+        animation-duration: .75s;
+    }
+
     .username{
         grid-area: username;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 0 0 0 !important;
+        margin-top: 17px;
+        margin-left: 0;
+        letter-spacing: 1px;
     }
 
     .date{
         grid-area: date;
+        margin-top: 20px;
+        margin-left: 20px;
+        letter-spacing: 1px;
+    }
+
+    .date i{
+        margin-left: 10px;
     }
 
     .topic{
         grid-area: topic;
+        letter-spacing: 1px;
     }
 
     .one{
@@ -161,10 +179,10 @@
     }
 
 
-    #profile_link {
-        grid-area: proficient;
-        display: flex;
-        letter-spacing: 2px;
+    #profile{
+        position: absolute;
+        top: 1%;
+        right: 1.5%;
     }
     
     input{
