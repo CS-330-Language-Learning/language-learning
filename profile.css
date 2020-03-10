@@ -29,7 +29,7 @@
         font-weight: bold;
     }
     
-    p{
+    input{
         display: inline;
         position: absolute;
         bottom: 0;
@@ -54,6 +54,10 @@
 		font-weight: bold !important;
         letter-spacing: 2px !important;
         color: white;
+    }
+
+    .test{
+        border: 1px solid black !important;
     }
 
     #title h2{
