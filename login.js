@@ -18,11 +18,11 @@ function login(){
     if (username in users){
         if (password === users[username]){
             if (username === "johndoe123"){
-                openfile("profile.html");
+                openfile("message_inbox.html");
                 console.log("logged in");
             }
             else{
-                openfile("./messaging_home.html");
+                openfile("./message_inbox.html");
                 console.log("logged in");
             }
         }
