@@ -1,6 +1,6 @@
 ## CS 330 Final Report
 
-### Quinn Shim, Kevin Lee, Katherine Liu, Ah Hyun (Hannah) Kim
+### Section 66 (Language Learning) – Quinn Shim, Kevin Lee, Katherine Liu, Ah Hyun (Hannah) Kim
 
 ---
 
@@ -39,14 +39,28 @@ From here, we decided to include more information and figure out how to present 
 
 ### High Fidelity Prototyping
 
+Tasks: log in, look for a conversation, talk with somebody
+
+Need screenshots
+
+We decided to support **user profiles**, **social interactions**, and **branding.**
+
 ### Reflections
 
-In the time we had, we accomplished something visual interface and a high level overview of how we want users to navigate our app. if we had more time, make certain parts work (search, recording), experiment with how users like that?
+In the time we had, we designed a high level overview of how we want users to navigate our application and built a visual interface to match it. We iterated through many different user workflows and were forced to question many of our prior assumptions regarding the problem domain of language learning.
 
-better interface to separate learning and coaching aspects
+If we had more time, our next steps would be to improve our interface for separating the learning and coaching aspects of our app. As of right now, we just have the message inbox split into two sections, but we are not satsified with this design, as it does not scale well with inbox size. We would also like to implement other necessary aspects of the application (signup, voice recording) that we chose not to build in interest of the limited scope and time of this class.
 
 ### Links
 
+[Our GitHub repository](https://github.com/CS-330-Language-Learning/language-learning/tree/project_8)
 
+[A working version of our prototype](https://cs-330-language-learning.github.io/language-learning/login.html)
 
+Our app is best viewed in Google Chrome using the iPhone X view (which can be changed in Developer Tools). You will log in as our sample user Billy Johnson with the following credentials
 
+**Username:** billyjohnson
+
+**Password:** password2
+
+You will then start a new conversation (none of the existing conversations will take you to a chatroom). 
