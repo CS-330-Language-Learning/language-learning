@@ -1,0 +1,222 @@
+@media screen and (max-device-width: 375px){
+    #message-box {
+        margin: auto;
+        height: 100vh;
+        width: 100vw;
+    
+        display: grid;
+        grid-template-columns: 5% 45% 45% 5%;
+        grid-template-rows: 10% 6% 40% 40% 6%;
+        grid-template-areas:
+                "title title title title"
+                ". search search ."
+                ". practicing practicing ."
+                ". coaching coaching ."
+                ". . . ."
+    }
+
+    h2{
+        font-weight: bold !important;
+        font-size: 35px !important;
+        letter-spacing: 4px !important;
+
+    }
+    
+    #title {
+        grid-area: title;
+        background-color: #2196F3;
+        text-align: center;
+        font-size: 30px !important;
+		font-weight: bold !important;
+        letter-spacing: 2px !important;
+        color: white;
+        width: 100% !important;
+    }
+
+    #title h2{
+        margin-top: 40px !important;
+    }
+    
+    #search {
+        grid-area: search;
+        display: relative;
+    }
+
+    #search i{
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 7px;
+        pointer-events: none;
+    }
+    
+    #practicing {
+        grid-area: practicing;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 17% 25% 25% 25%;
+        grid-template-areas:
+                "ptitle"
+                "one"
+                "two"
+                "three"
+    }
+
+    #composePracticing{
+        margin-left: 10px;
+        border-radius: 40%;
+        padding-left: 4px;
+        padding-right: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background: #2196F3;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    #practicing h3{
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+
+    .title{
+        grid-area: ptitle;
+        font-weight: bold;
+    }
+
+    .message_preview{
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        height: 98%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 23% 47% 30%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+                "profilepic username date"
+                "profile topic ."
+    }
+
+    @-webkit-keyframes example{
+        from {background-color: blue;}
+    }
+
+    .profilepic{
+        grid-area: profilepic;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin-top: 8px;
+    }
+
+    .clicked{
+        animation-name: example;
+        animation-duration: .75s;
+    }
+
+    .username{
+        grid-area: username;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 0 0 0 !important;
+        margin-top: 17px;
+        margin-left: 0;
+        letter-spacing: 1px;
+    }
+
+    .date{
+        grid-area: date;
+        margin-top: 20px;
+        margin-left: 20px;
+        letter-spacing: 1px;
+    }
+
+    .date i{
+        margin-left: 10px;
+    }
+
+    .topic{
+        grid-area: topic;
+        letter-spacing: 1px;
+    }
+
+    .one{
+        grid-area: one;
+        border-top: 2px solid black;
+    }
+    .two{
+        grid-area: two;
+    }
+    .three{
+        grid-area: three;
+    }
+    
+    #coaching {
+        grid-area: coaching;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 17% 25% 25%;
+        grid-template-areas:
+                "ptitle"
+                "one"
+                "two"
+    }
+
+    #composeCoaching{
+        margin-left: 10px;
+        border-radius: 40%;
+        padding-left: 4px;
+        padding-right: 2px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        background: #2196F3;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    #coaching h3{
+        letter-spacing: 2px;
+        font-size: 25px;
+    }
+
+
+    #profile{
+        position: absolute;
+        top: 1%;
+        right: 1.5%;
+    }
+    
+    input{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        margin-top: 20px !important;
+        border-radius: 5%;
+        background: lightgrey;
+    }
+
+    #search {
+        grid-area: search;
+        position: relative;
+    }
+    
+    #search i {
+        position: absolute;
+        bottom: 8px;
+        left: 10px;
+    }
+    
+    #search input {
+        background-color: rgb(231, 231, 231);
+        border-radius: 10px;
+        border: 1px solid lightgray;
+        height: 60%;
+        padding-left: 35px;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+    }
+    
+    ::placeholder {
+        color: rgb(113, 113, 113);
+    }
+}

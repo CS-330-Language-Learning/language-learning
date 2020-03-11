@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	
+	<!-- load MUI -->
+	<link href="mui.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="login-box">
+		<div id="title"><h2>Language Learning</h2>
+		</div>
+		<div id="logo"><img src="330logo.png"></div>
+		<div id="username" class="mui-textfield">
+			<input type="text" placeholder="Username">
+		</div>
+		<div id="password" class="mui-textfield">
+			<input type="password" placeholder="Password">
+		</div>
+		<div id="remember">
+		<input id="rememberBox" type="checkbox"><label for="rememberBox" id="rememberLabel">Remember Me</label>
+		</div>
+		<a id="forgot">FORGOT PASSWORD</a>
+		<button class="mui-btn mui-btn--primary mui-btn--raised" onclick="login();">Login</button>
+		<p id="new_user_text">Don't Have an Account?</p>
+		<button class="mui-btn mui-btn--accent mui-btn--raised">Sign Up</button>
+	</div>
+	<script src="./login.js"></script>
+</body>
+
+
+
+</html>

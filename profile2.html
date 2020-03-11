@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Profile</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="profile.css">
+	<!-- load MUI -->
+	<link href="mui.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="login-box">
+		<div id="title">
+            <h2>Profile</h2>
+		</div>
+		<div id="username" class="mui-textfield profile_field">
+           <p><b>Username</b></p><input class="u" value="billyjohnson" disabled>
+		</div>
+		<div id="email" class="mui-textfield profile_field">
+            <p><b>Email</b></p><input class="u" value="billyj@gmail.com" disabled>
+        </div>
+        <div id="country" class="mui-textfield profile_field">
+            <p><b>Country</b></p><input class="u" value="United States" disabled>
+        </div>
+        <div id="proficient" class="mui-textfield profile_field">
+			<p><b>Proficient In</b></p><input class="u" value="English" disabled>
+        </div>
+        <div id="practicing" class="mui-textfield profile_field">
+            <p><b>Practicing</b></p><input class="u" value="Spanish" disabled>
+		</div>
+				<button id="edit" class="mui-btn mui-btn--accent mui-btn--raised">Edit Profile</button>
+				<button id="message" class="mui-btn mui-btn--primary mui-btn--raised" onClick="toMessages()">Back to Messages</button>
+	</div>
+	<script src="./profile.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,214 @@
+.mui-appbar {
+    height: 12.5vh;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 35px 25% 25% 25%;
+    grid-template-areas:
+        ". ."
+        "back lang"
+        ". user"
+        ". topic";
+    align-items: center;
+}
+
+.fa-angle-left {
+    grid-area: back;
+    padding-left: 50px;
+}
+
+.mui--text-display2 i {
+    padding-right: 20px;
+}
+
+#lang {
+    grid-area: lang;
+}
+
+#user {
+    grid-area: user;
+}
+
+#topic {
+    grid-area: topic;
+}
+
+#chatroom {
+    height: 77.5vh;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 5% 40% 5% 5% 40% 5%;
+    grid-template-rows: 6% 6% 3% 6% 3% 6% 3% 6% 3% auto 3%;
+    grid-template-areas:
+        ". dt dt dt dt ."
+        ". m1 . . . ."
+        ". m1l . . . ."
+        ". . . . m2 ."
+        ". . . . m2l ."
+        ". m3 . . . ."
+        ". m3l . . . ."
+        ". . . . m4 ."
+        ". . . . m4l ."
+        ". . . . . ."
+        "text text text text text text";
+}
+
+#datetime {
+    grid-area: dt;
+    align-self: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#bottom-bar {
+    height: 10vh;
+    background-color: #2196F3;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 5% auto 5%;
+    grid-template-areas:
+        ". . ."
+        "no audio yes"
+        ". . .";
+}
+
+#no {
+    grid-area: no;
+    align-self: center;
+    justify-self: center;
+    color: red;
+    display: none;
+}
+
+#yes {
+    grid-area: yes;
+    align-self: center;
+    justify-self: center;
+    color: green;
+    display: none;
+}
+
+#audio {
+    grid-area: audio;
+    align-self: center;
+    justify-self: center;
+    height: 150px;
+    width: 150px;
+}
+
+#audio i {
+    font-size: 6em;
+    padding-top: 47px;
+}
+
+.chat-bubble {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: 22% 43% 25% 10%;
+    grid-template-rows: 5% auto 5%;
+    grid-template-areas:
+        ". . . ."
+        "play line length ."
+        ". . . .";
+}
+
+.cb-left {
+    background-color: #b6b6b9;
+}
+
+.cb-right {
+    background-color: #7889E2;
+}
+
+#m1 {
+    grid-area: m1;
+}
+
+#m1-label {
+    grid-area: m1l;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 1.25em;
+    padding-left: 10px;
+}
+
+#m2 {
+    grid-area: m2;
+}
+
+#m2-label {
+    grid-area: m2l;
+    align-self: center;
+    justify-self: end;
+    font-weight: bolder;
+    font-size: 1.25em;
+    padding-right: 10px;
+}
+
+#m3 {
+    grid-area: m3;
+}
+
+#m3-label {
+    grid-area: m3l;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 1.25em;
+    padding-left: 10px;
+}
+
+#m4 {
+    grid-area: m4;
+    visibility: hidden;
+}
+
+#m4-label {
+    grid-area: m4l;
+    align-self: center;
+    justify-self: end;
+    font-weight: bolder;
+    font-size: 1.25em;
+    padding-right: 10px;
+    visibility: hidden;
+}
+
+.play-message {
+    grid-area: play;
+    align-self: center;
+    justify-self: end;
+    color: white;
+}
+
+.line {
+    grid-area: line;
+    background-color: white;
+    height: 5px;
+    align-self: center;
+    justify-self: stretch;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.message-length {
+    grid-area: length;
+    border-radius: 100px;
+    height: 48px;
+    background-color: white;
+    align-self: center;
+    justify-self: stretch;
+    text-align: center;
+}
+
+.message-length div {
+    padding-top: 0.26em;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#hint-text {
+    grid-area: text;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 20px;
+    font-size: 3.5em;
+}

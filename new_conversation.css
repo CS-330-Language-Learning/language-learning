@@ -1,0 +1,127 @@
+.mui-appbar {
+	height: 12.5vh;
+}
+
+#banner {
+	font-size: 7em;
+	padding-left: 40px;
+	padding-top: 4vh;
+}
+
+#selection {
+	height: 87.5vh;
+	display: grid;
+	grid-template-columns: 6% 44% 44% 6%;
+	grid-template-rows: 3% 5% 5% 10% 12.5% 12.5% 12.5% 12.5% 19.5%;
+	grid-template-areas:
+		". . . ."
+		". prompt prompt ."
+		". search search ."
+		". text text ."
+		". topic1 topic2 ."
+		". topic3 topic4 ."
+		". topic5 topic6 ."
+		". topic7 topic8 ."
+		". begin begin .";
+}
+
+#prompt {
+	grid-area: prompt;
+	font-size: 4em;
+}
+
+#text {
+	grid-area: text;
+	font-size: 4em;
+	padding-top: 1em;
+	align-self: center;
+}
+
+#search {
+	grid-area: search;
+	position: relative;
+}
+
+#search i {
+	position: absolute;
+	bottom: 15px;
+	left: 20px;
+}
+
+#search input {
+	background-color: rgb(231, 231, 231);
+	height: 2em;
+	border-radius: 20px;
+	padding-left: 80px;
+	font-size: 4em;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+::placeholder {
+	color: rgb(113, 113, 113);
+}
+
+.topic-card {
+	border-radius: 20px;
+	margin: 20px;
+	text-align: center;
+	padding-top: 60px;
+	font-size: 3em;
+}
+
+.selected {
+	border: 2px solid black;
+	filter: brightness(85%);
+}
+
+#topic1 {
+	grid-area: topic1;
+	background-color: rgb(141, 200, 250);
+}
+
+#topic2 {
+	grid-area: topic2;
+	background-color: rgb(141, 254, 219);
+}
+
+#topic3 {
+	grid-area: topic3;
+	background-color: rgb(253, 236, 146);
+}
+
+#topic4 {
+	grid-area: topic4;
+	background-color: rgb(202, 135, 249);
+}
+
+#topic5 {
+	grid-area: topic5;
+	background-color: rgb(253, 137, 204);
+}
+
+#topic6 {
+	grid-area: topic6;
+	background-color: rgb(252, 139, 140);
+}
+
+#topic7 {
+	grid-area: topic7;
+	background-color: rgb(245, 167, 167);
+}
+
+#topic8 {
+	grid-area: topic8;
+	background-color: rgb(151, 253, 104);
+}
+
+#begin {
+	grid-area: begin;
+	height: 50%;
+	margin-top: 100px;
+	align-self: center;
+	font-size: 3em;
+	font-weight: bold;
+	border-radius: 20px;
+}

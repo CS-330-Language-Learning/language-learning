@@ -1,0 +1,118 @@
+@media screen and (max-device-width: 480px){
+    #login-box {
+        margin: auto;
+        height: 100vh;
+        width: 100vw;
+    
+        display: grid;
+        grid-template-columns: 5% 45% 45% 5%;
+        grid-template-rows: 10% 5% 12.5% 12.5% 12.5% 12.5% 12.5% 4% 10% 5%%;
+        grid-template-areas:
+                "title title title title"
+                ". . . ."
+                ". username username ."
+                ". email email ."
+                ". country country ."
+                ". proficient proficient ."
+                ". practicing practicing ."
+                ". . . ."
+                ". . edit ."
+                ". . message ."
+                ". . . ."
+    }
+    .profile_field{
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+    }
+
+    h2{
+        font-weight: bold;
+    }
+    
+    input{
+        display: inline;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .u{
+        right: 0%;
+    }
+
+    h2{
+        font-weight: bold !important;
+        font-size: 35px !important;
+        letter-spacing: 4px !important;
+
+    }
+    
+    #title {
+        grid-area: title;
+        background-color: #2196F3;
+        text-align: center;
+        font-size: 30px !important;
+		font-weight: bold !important;
+        letter-spacing: 2px !important;
+        color: white;
+    }
+
+    .test{
+        border: 1px solid black !important;
+    }
+
+    #title h2{
+        margin-top: 40px;
+    }
+    
+    #username {
+        grid-area: username;
+        display: flex;
+        letter-spacing: 2px;
+    }
+    
+    #email {
+        grid-area: email;
+        display: flex;
+        letter-spacing: 2px;
+    }
+    
+    #country {
+        grid-area: country;
+        display: flex;
+        letter-spacing: 2px;
+    }
+    
+    #proficient {
+        grid-area: proficient;
+        display: flex;
+        letter-spacing: 2px;
+    }
+    
+    #practicing {
+        grid-area: practicing;
+        display: flex;
+        letter-spacing: 2px;
+    }
+    
+    #edit {
+        grid-area: edit;
+        height: 80%;
+        font-size: 10px;
+        font-size: 15px !important;
+		font-weight: bold !important;
+        letter-spacing: 2px !important;
+        border-radius: 5%;
+    }
+    
+    #message {
+        grid-area: message;
+        height: 35%;
+        margin-left: 0 !important;
+        font-size: 10px;
+		font-weight: bold !important;
+        letter-spacing: 2px !important;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+    }
+}
