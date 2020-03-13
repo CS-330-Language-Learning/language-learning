@@ -1,6 +1,6 @@
 ## CS 330 Final Report
 
-### Quinn Shim, Kevin Lee, Katherine Liu, Ah Hyun (Hannah) Kim
+### Section 66 (Language Learning) – Quinn Shim, Kevin Lee, Katherine Liu, Ah Hyun (Hannah) Kim
 
 ---
 
@@ -39,14 +39,53 @@ From here, we decided to include more information and figure out how to present 
 
 ### High Fidelity Prototyping
 
+At this stage, the tasks we are supporting are logging in, viewing and editing a user profile, starting a new conversation, and sending voice messages with another user. 
+
+*Task 1: Logging in*
+
+![](Task1_Screen1Login.png)
+
+This task is very straightforward. For this assignment, we are assuming that the user already has an account so they can type in their login credentials and continue using the app.
+
+*Task 2: View/Edit User Profile*
+
+![](Task2_Screen1Messages.png)
+![](Task2_Screen2ProfileDISPLAY.png) ![](Task2_Screen3ProfileEDIT.png) 
+
+After logging in, users will see their ongoing/past messages. The user can click on the person icon at the top right corner to go to their profile page. From here, they can edit their details by clicking “Edit Profile”. This allows users to change their basic information in addition to selecting which language they want to practice. 
+
+*Task 3: Starting a New Conversation*
+
+![](Task2_Screen1Messages.png) ![](Task3_Screen2NewConvoSearch.png) ![](Task3_Screen3NewConvoSelect.png)
+![](Task3_Screen4Matching.png) ![](Task3_Screen5Matched.png) 
+
+From the messages inbox, users can click into ongoing and past conversations. They can also start a new conversation. If a user wanted to start a new conversation to practice a language, they would click the blue icon to the right of “Practicing”. This will lead them to the New Conversation screen where they can type a subject matter into the search bar or choose from a preexisting selection of frequently talked about topics. Once they hit begin, they will see a loading screen that lets them know that the app is pairing with them with another user who is a native speaker of the language they want to practice who also wants to talk about the same subject.
+
+*Task 4: Send voice message*
+
+![](Task4_Screen1ChatScreen.png)
+![](Task4_Screen2_RecordingNewMessage.png ) ![](Task4_Screen3PreviewButton.png) ![](Task4_Screen4PlayingPreview.png) ![](Task4_Screen5NewMessagesSent.png) 
+
+To send a voice message, the user would press and hold the record button at the bottom of the screen. Once the user releases the button, they can preview the entire message. If they wish to re-record, they can do so by hitting the X button. If they are satisfied, they can hit the green check button to send the message.
+
+Three components we decided to support are user profiles, social interactions, and branding. For user profiles, as mentioned earlier, we wanted to give users the ability to check and edit their profile information. We intentionally designed user profiles with very little personal information (including lack of a profile picture) because we were concerned that the app could potentially turn into Tinder or Omegle. The social interactions component consist of the messaging interface where matched users would send voice messages to each other in order to practice a language. As for branding, we wanted to focus on our color scheme in order to unify our interface as well as design a fitting logo fitting to our app. We came up with specific colors that were clean, simple, and demonstrated the values behind our app: simplicity, approachability, and safety. We chose to go with the bright blue because it gave off a friendly feeling and is commonly used with other educational applications. The other colors selected have been chosen based on how compatible it was with this primary blue color using Coolors.co.
+ 
 ### Reflections
 
-In the time we had, we accomplished something visual interface and a high level overview of how we want users to navigate our app. if we had more time, make certain parts work (search, recording), experiment with how users like that?
+In the time we had, we designed a high level overview of how we want users to navigate our application and built a visual interface to match it. We iterated through many different user workflows and were forced to question many of our prior assumptions regarding the problem domain of language learning.
 
-better interface to separate learning and coaching aspects
+If we had more time, our next steps would be to improve our interface for separating the learning and coaching aspects of our app. As of right now, we just have the message inbox split into two sections, but we are not satsified with this design, as it does not scale well with inbox size. We would also like to implement other necessary aspects of the application (signup, voice recording) that we chose not to build in interest of the limited scope and time of this class.
 
 ### Links
 
+[Our GitHub repository](https://github.com/CS-330-Language-Learning/language-learning/tree/project_8)
 
+[A working version of our prototype](https://cs-330-language-learning.github.io/language-learning/login.html)
 
+Our app is best viewed in Google Chrome using the iPhone X view (which can be changed in Developer Tools). You will log in as our sample user Billy Johnson with the following credentials
 
+**Username:** billyjohnson
+
+**Password:** password2
+
+You will then start a new conversation (none of the existing conversations will take you to a chatroom). 
