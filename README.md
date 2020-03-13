@@ -64,7 +64,7 @@ From the messages inbox, users can click into ongoing and past conversations. Th
 *Task 4: Send voice message*
 
 ![](Task4_Screen1ChatScreen.png)
-![](Task4_Screen2_RecordingNewMessage.png) ![](Task4_Screen3PreviewButton.png) ![](Task4_Screen4PlayingPreview.png) ![](Task4_Screen5NewMessagesSent.png) 
+![](Task4_Screen2_RecordingNewMessage.png ) ![](Task4_Screen3PreviewButton.png) ![](Task4_Screen4PlayingPreview.png) ![](Task4_Screen5NewMessagesSent.png) 
 
 To send a voice message, the user would press and hold the record button at the bottom of the screen. Once the user releases the button, they can preview the entire message. If they wish to re-record, they can do so by hitting the X button. If they are satisfied, they can hit the green check button to send the message.
 
