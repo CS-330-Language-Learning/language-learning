@@ -39,11 +39,19 @@ From here, we decided to include more information and figure out how to present 
 
 ### High Fidelity Prototyping
 
-Tasks: log in, look for a conversation, talk with somebody
+At this stage, the tasks we are supporting are logging in, viewing and editing a user profile, starting a new conversation, and sending voice messages with another user. 
 
-Need screenshots
+*Task 1: Logging in*
 
-We decided to support **user profiles**, **social interactions**, and **branding.**
+![](Task1_Screen1Login.png)
+
+This task is very straightforward. For this assignment, we are assuming that the user already has an account so they can type in their login credentials and continue using the app.
+
+*Task 2: View/Edit User Profile*
+
+![](Task2_Screen2ProfileDISPLAY.png)
+
+
 
 ### Reflections
 
