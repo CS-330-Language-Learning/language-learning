@@ -49,22 +49,22 @@ This task is very straightforward. For this assignment, we are assuming that the
 
 *Task 2: View/Edit User Profile*
 
-![](Task2_Screen1Messages.png) |
-![](Task2_Screen2ProfileDISPLAY.png) | ![](Task2_Screen3ProfileEDIT.png) 
+![](Task2_Screen1Messages.png)
+![](Task2_Screen2ProfileDISPLAY.png) ![](Task2_Screen3ProfileEDIT.png) 
 
 After logging in, users will see their ongoing/past messages. The user can click on the person icon at the top right corner to go to their profile page. From here, they can edit their details by clicking “Edit Profile”. This allows users to change their basic information in addition to selecting which language they want to practice. 
 
 *Task 3: Starting a New Conversation*
 
-![](Task2_Screen1Messages.png) | ![](Task3_Screen2NewConvoSearch.png) | ![](Task3_Screen3NewConvoSelect.png) |
-![](Task3_Screen4Matching.png) | ![](Task3_Screen5Matched.png) 
+![](Task2_Screen1Messages.png) ![](Task3_Screen2NewConvoSearch.png) ![](Task3_Screen3NewConvoSelect.png)
+![](Task3_Screen4Matching.png) ![](Task3_Screen5Matched.png) 
 
 From the messages inbox, users can click into ongoing and past conversations. They can also start a new conversation. If a user wanted to start a new conversation to practice a language, they would click the blue icon to the right of “Practicing”. This will lead them to the New Conversation screen where they can type a subject matter into the search bar or choose from a preexisting selection of frequently talked about topics. Once they hit begin, they will see a loading screen that lets them know that the app is pairing with them with another user who is a native speaker of the language they want to practice who also wants to talk about the same subject.
 
 *Task 4: Send voice message*
 
-![](Task4_Screen1ChatScreen.png) |
-![](Task4_Screen2_RecordingNewMessage.png) | ![](Task4_Screen3PreviewButton.png) | ![](Task4_Screen4PlayingPreview.png) | ![](Task4_Screen5NewMessagesSent.png) 
+![](Task4_Screen1ChatScreen.png)
+![](Task4_Screen2_RecordingNewMessage.png) ![](Task4_Screen3PreviewButton.png) ![](Task4_Screen4PlayingPreview.png) ![](Task4_Screen5NewMessagesSent.png) 
 
 To send a voice message, the user would press and hold the record button at the bottom of the screen. Once the user releases the button, they can preview the entire message. If they wish to re-record, they can do so by hitting the X button. If they are satisfied, they can hit the green check button to send the message.
 
